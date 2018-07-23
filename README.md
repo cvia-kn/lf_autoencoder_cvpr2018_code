@@ -19,6 +19,7 @@ We provide an extensive evaluation on synthetic light field
 data, and show that the network yields good results
 on previously unseen real world data captured by a Lytro Illum camera
 and various gantries.
+![teaser](https://user-images.githubusercontent.com/41570345/43076792-9e4eaf92-8e85-11e8-8763-9e3fd041ab23.png)
 
 ## Project description
 Our project consist of 2 steps:
