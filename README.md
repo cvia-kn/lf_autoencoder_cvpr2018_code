@@ -31,7 +31,7 @@ Our project consist of 2 steps:
 2. Tensorflow with GPU support
 
 ### 1. Creating the data
-Depends on the type of data use separate scripts to create inputs for the network: 
+Depends on the type of data use separate scripts to create inputs (.hdf5 data container) for the network: 
 * synthetic **create_training_data_autoencoder.py**
 * [light field benchmark](http://hci-lightfield.iwr.uni-heidelberg.de/) **create_training_data_depth.py**
 * real-world use separete script **create_training_data_lytro**
@@ -42,9 +42,17 @@ nviews = 9 # number of views
 sx = 16 # block step size
 sy = 16
 
-training_data_dir = "H:\\trainData\\"
+training_data_dir = "./trainData/"
 training_data_filename = 'lf_patch_autoencoder1.hdf5'
 file = h5py.File( training_data_dir + training_data_filename, 'w' )
 
-data_source = "H:\\CNN_data\\1"
+data_source = "./CNN_data/1"
 ```
+[Synthetic data](http://link/) used for training is organized in 8 folders, for every folder we create a data container.
+
+### 2. Run the network
+To train the network you need to specify all training options in the **config_autoencoder_v9_final.py**
+Also, you need to specify patch size and minimum and maximum disparity values in the **config_data_format.py**
+In **cnn_autoencoder.py** you need to specify coordinates that are taken into account when the loss is computed.
+For example, if the input patch size is 48x48, and we select *loss_min_coord_3D= 0*, *loss_max_coord_3D = 40*,
+then the last 8 pixels will be omitted while computing loss.
