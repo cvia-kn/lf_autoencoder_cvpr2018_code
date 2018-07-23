@@ -23,8 +23,8 @@ and various gantries.
 ## Project description
 Our project consist of 2 steps:
 
-1. Divide input light fields into 3D patches and create network inputs with DataRead project
-2. Train and evaluate the network with lf_autoencoder_cvpr2018_code project
+1. Divide input light fields into 3D patches and create network inputs with [DataRead_code](https://github.com/cvia-kn/lf_autoencoder_cvpr2018_code/tree/master/DataRead_code) project
+2. Train and evaluate the network with [lf_autoencoder_cvpr2018_code](https://github.com/cvia-kn/lf_autoencoder_cvpr2018_code/tree/master/lf_autoencoder_cvpr2018_code) project
 
 ### Prerequisites
 1. Pythom 3.5
@@ -59,4 +59,5 @@ then the last 8 pixels will be omitted while computing loss.
 
 To use already trained model, please download the model [current_v9.zip](http://link/) and extract the archive to **./networks/** folder.
 We provide some test examples [diffuse_specular.zip](http://link/) that shoulb be extracted to the **./test_data/** folder.
-To evaluate on all test examples used in the paper, create the test data with the [DataRead_code](https://github.com/cvia-kn/lf_autoencoder_cvpr2018_code/tree/master/DataRead_code) project
+
+To evaluate on all test examples used in the paper, create the test data with the [DataRead_code](https://github.com/cvia-kn/lf_autoencoder_cvpr2018_code/tree/master/DataRead_code) project.
