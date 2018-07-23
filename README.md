@@ -20,4 +20,11 @@ data, and show that the network yields good results
 on previously unseen real world data captured by a Lytro Illum camera
 and various gantries.
 
-# Project description
+## Project description
+Our project consist of 2 steps:
+
+1. Divide input light fields into 3D patches and create network inputs with DataRead project
+2. Train and evaluate the network with lf_autoencoder_cvpr2018_code project
+
+# 1. Creating the data
+Depends on the type of data: synthetic, light field benchmark, real-woeld use separete script
