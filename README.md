@@ -58,8 +58,8 @@ In **cnn_autoencoder.py** you need to specify coordinates that are taken into ac
 For example, if the input patch size is 48x48, and we select *loss_min_coord_3D= 0*, *loss_max_coord_3D = 40*,
 then the last 8 pixels will be omitted while computing loss.
 
-To use the trained model, please download the model [current_v9.zip](http://data.lightfield-analysis.net/current_v9.zip/) and extract the archive to **./networks/** folder.
-We provide some test examples [diffuse_specular.zip](http://data.lightfield-analysis.net/diffuse_specular.zip/) that shoulb be extracted to the **./test_data/** folder.
+To use the trained model, please download the model [current_v9.zip](http://data.lightfield-analysis.net/current_v9.zip) and extract the archive to **./networks/** folder.
+We provide some test examples [diffuse_specular.zip](http://data.lightfield-analysis.net/diffuse_specular.zip) that shoulb be extracted to the **./test_data/** folder.
 
 To evaluate on all test examples used in the paper, create the test data with the [DataRead_code](https://github.com/cvia-kn/lf_autoencoder_cvpr2018_code/tree/master/DataRead_code) project.
 
