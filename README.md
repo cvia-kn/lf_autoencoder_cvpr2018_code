@@ -49,7 +49,14 @@ file = h5py.File( training_data_dir + training_data_filename, 'w' )
 
 data_source = "./CNN_data/1"
 ```
-[Synthetic data](http://link/) used for training, is organized in 8 folders, for every folder we create a data container.
+Synthetic data used for training, is organized in 7 folders, for every folder we create a data container.
+* [Container 1](http://data.lightfield-analysis.net/CNN_data/1.zip)
+* [Container 2](http://data.lightfield-analysis.net/CNN_data/2.zip)
+* [Container 3](http://data.lightfield-analysis.net/CNN_data/3.zip)
+* [Container 4](http://data.lightfield-analysis.net/CNN_data/4.zip)
+* [Container 5](http://data.lightfield-analysis.net/CNN_data/5.zip)
+* [Container 6](http://data.lightfield-analysis.net/CNN_data/diffuse.zip) Here we create Lambertian light fields where we assign 0 to specular component.
+* [Test data](http://data.lightfield-analysis.net/CNN_data/test.zip)
 
 ### 2. Run the network
 To train the network you need to specify all training options in the **config_autoencoder_v9_final.py**
