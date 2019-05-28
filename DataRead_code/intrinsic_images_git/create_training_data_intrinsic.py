@@ -121,17 +121,17 @@ for lf_name in data_folders:
 
   data_folder = os.path.join(data_source,lf_name)
   # read diffuse color
-  LF_dc = file_io.read_lightfield_intrinsic_crosshair(data_folder, 'dc')
+  LF_dc = file_io.read_lightfield_intrinsic(data_folder, 'dc')
   # read diffuse direct
-  LF_dd = file_io.read_lightfield_intrinsic_crosshair(data_folder, 'dd')
+  LF_dd = file_io.read_lightfield_intrinsic(data_folder, 'dd')
   # read diffuse indirect
-  LF_di = file_io.read_lightfield_intrinsic_crosshair(data_folder, 'di')
+  LF_di = file_io.read_lightfield_intrinsic(data_folder, 'di')
   # read glossy color
-  LF_gc = file_io.read_lightfield_intrinsic_crosshair(data_folder, 'gc')
+  LF_gc = file_io.read_lightfield_intrinsic(data_folder, 'gc')
   # read glossy direct
-  LF_gd = file_io.read_lightfield_intrinsic_crosshair(data_folder, 'gd')
+  LF_gd = file_io.read_lightfield_intrinsic(data_folder, 'gd')
   # read glossy indirect
-  LF_gi = file_io.read_lightfield_intrinsic_crosshair(data_folder, 'gi')
+  LF_gi = file_io.read_lightfield_intrinsic(data_folder, 'gi')
 
   # albedo LF
   LF_albedo = LF_dc
